@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --bg: #dcdcdc;
+  --lavender: #e6e6fa;
+  --income: #3a76ef;
+  --expence: #64c7ff;
+  --hand: #a66dd4;
+  --margin: #6ed4b1;
+  --grey: #edf0f6;
+  --light-grey: #f6f6ff;
+}
+
+.body-container {
+  display: flex;
+}
+
+.navbar {
+  width: 60px;
+  height: 100vh;
+  background-color: var(--lavender);
+  border-radius: 0 20px 20px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.logo {
+  mix-blend-mode: color-burn;
+}
+
+.logo-parent {
+  display: flex;
+}
+
+.logo-parent .logo {
+  width: 50px;
+  height: 50px;
+}
+
+.logo-parent .title {
+  align-self: center;
+}
+
+.nav-ul .nav-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.nav-ul .nav-item .fa-solid {
+  font-size: 25px;
+}
+
+.nav-item .nav-item-link {
+  margin: 0 10px;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: #d6d6f7;
+}
+
+.nav-item .fa-caret-down {
+  color: #808080;
+  margin-left: 10px;
+}
+
+.nav-ul .nav-item .nav-item-link,
+.logo-parent .title{
+  display: none;
+}
+
+.logo-parent .logo:hover + .title {
+  display: block;
+}
+
+.logo-parent:hover + .nav-ul .nav-item .nav-item-link {
+  display: block;
+}
+
+.nav-ul:hover .nav-item .nav-item-link {
+  display: block;
+}
+
+.navbar:hover {
+  width: 200px;
+}
+
+.container {
+  flex-grow: 1;
+}
+
+.top-sec {
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 10px;
+  background-color: var(--lavender);
+  border-radius: 20px;
+  position: sticky;
+  top: 0;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  border-radius: 20px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.input-parent {
+  display: flex;
+  align-items: center;
+
+}
+.search {
+  width: 40vw;
+  height: 40px;
+  padding: 10px;
+  padding-left: 20px;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+}
+
+.icon-parent {
+  display: flex;
+  align-items: center;
+}
+
+.fa-bell,
+.fa-message,
+.user-img {
+  margin-left: 40px;
+}
+
+.user-img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats-item {
+  width: 45%;
+  height: 120px;
+}
+
+.item-content {
+  color: var(--white);
+  padding: 10px;
+}
+
+.income {
+  background-color: var(--income);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.expense {
+  background-color: var(--expence);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+.hand {
+  background-color: var(--hand);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+.margin {
+  background-color: var(--margin);
+  border-radius: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+
+.content {
+  background-color: var(--grey);
+}
+
+
+.tracking{
+  width: 50%;
+  background-color: var(--light-grey);
+  border-radius: 20px;
+  margin: 10px 20%;
+  padding: 10px;
+}
+
+.fa-ellipsis{
+  margin-top: 5px;
+}
+
+.tracking-items{
+display: flex;
+justify-content: space-between;
+padding-top: 10px;
+}
+
+.tracking-left{
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px;
+}
+
+.tracking-right{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.day-heading{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #000000;
+}
+
+.img{
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
